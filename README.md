@@ -1,4 +1,4 @@
-###Findr
+**#Findr#**
 
 This program allows you to count the number of occurrences of a word in a PDF file. It takes in the path to a PDF file, a list of words to search for, and an optional output file path as input. The program then counts the number of occurrences of each word in the PDF, and returns the total number of words and unique words in the PDF. If an output file path is provided, the program will write the results to a CSV file named 'findr.csv' in the current directory
 
