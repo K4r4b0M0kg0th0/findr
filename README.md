@@ -16,7 +16,7 @@ This program allows you to count the number of occurrences of a word in a PDF fi
 - Optionally, enter the path to the output file.
 - The program will then count the occurrences of each word in the PDF and return the total number of words and unique words in the PDF, and write the results to a CSV file named 'findr.csv' in the current directory if an output file path was provided.
 
-_Please note that the program may not work for scanned PDFs. In that case, you would need to use OCR (Optical Character Recognition) to convert the scanned image to text before running this code._
+### _Please note that the program may not work for scanned PDFs. In that case, you would need to use OCR (Optical Character Recognition) to convert the scanned image to text before running this code._
 
 ## Possible Enhancements
 Search for multiple words at the same time
