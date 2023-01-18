@@ -17,8 +17,8 @@ def count_word_in_pdf(pdf_path, word):
         print("Error reading PDF file:", e)
         return -1
 
-pdf_path = 'path/to/pdf/file.pdf'
-word = 'example'
+pdf_path = '/home/k4r4bo/Downloads/Karabo Mokgotho_ (1).pdf'
+word = 'python'
 count = count_word_in_pdf(pdf_path, word)
 if count != -1:
     print(f'The word "{word}" appears {count} times in the PDF.')
