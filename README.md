@@ -3,9 +3,9 @@
 This program allows you to count the number of occurrences of a word in a PDF file. It takes in the path to a PDF file, a list of words to search for, and an optional output file path as input. The program then counts the number of occurrences of each word in the PDF, and returns the total number of words and unique words in the PDF. If an output file path is provided, the program will write the results to a CSV file named 'findr.csv' in the current directory
 
 ## Requirements
-Python 3.x
-PyPDF2 library
-csv library
+- Python 3.x
+- PyPDF2 library
+- csv library
 
 ## Usage
 - Clone the repository or download the script.
@@ -16,7 +16,7 @@ csv library
 - Optionally, enter the path to the output file.
 - The program will then count the occurrences of each word in the PDF and return the total number of words and unique words in the PDF, and write the results to a CSV file named 'findr.csv' in the current directory if an output file path was provided.
 
-Please note that the program may not work for scanned PDFs. In that case, you would need to use OCR (Optical Character Recognition) to convert the scanned image to text before running this code.
+_Please note that the program may not work for scanned PDFs. In that case, you would need to use OCR (Optical Character Recognition) to convert the scanned image to text before running this code._
 
 ## Possible Enhancements
 Search for multiple words at the same time
