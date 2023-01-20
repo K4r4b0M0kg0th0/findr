@@ -1,4 +1,4 @@
-# Findr
+# Nyaka
 
 This program allows you to find and count the occurrences of specified words in a pdf file. It can also output the results to a csv file. The program supports different match types (Exact, Partial, Regex) and return types (Tuple, Dict).
 
@@ -28,9 +28,9 @@ The program will print the total number of words and unique words in the pdf fil
 
 ## Built With
 
-* [PyPDF2](https://pythonhosted.org/PyPDF2/) - A library to work with pdf files
-* [argparse](https://docs.python.org/3/library/argparse.html) - A library for command-line parsing
+- [PyPDF2](https://pythonhosted.org/PyPDF2/) - A library to work with pdf files
+- [argparse](https://docs.python.org/3/library/argparse.html) - A library for command-line parsing
 
 ## Authors
 
-* **K4r4b0** 
+- **K4r4b0**
