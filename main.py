@@ -1,14 +1,19 @@
-import os
-import csv
-from typing import Tuple, List
-from pdf_functions import findr
-from input_validation import input_data
+from pdf_functions import findr, EXACT_MATCH, PARTIAL_MATCH, REGEX_MATCH
+import input_validation
 
-pdf_path, words, output_file = input_data()
-total_words, unique_words, counts = findr(pdf_path, words, output_file)
-if total_words != -1:
-    print(f'The pdf contains {total_words} total words and {unique_words} unique words')
-    if output_file:
-        print(f'Results have been written to {output_file}')
-else:
-    print("An error occurred")
+def main():
+    pdf_path, words, output_file, match_type, return_type = input_validation.validate_input()
+    try:
+        result = findr(pdf_path, words, output_file, match_type, return_type)
+        if isinstance(result, tuple):
+            total_words, unique_words, counts = result
+            print(f'The pdf contains {total_words} total words and {unique_words} unique words')
+            if output_file:
+                print(f'Results have been written to {output_file}')
+        else:
+            print(result)
+    except Exception as e:
+        print(f'An error occurred: {e}')
+
+if __name__ == '__main__':
+    main()
